@@ -61,11 +61,22 @@ with st.container():
         st.download_button('app.py', text_contents)
 
 
-
-with open("images/an225.png", "rb") as file:
-    btn = st.download_button(
-            label="Скачати ан-255",
-            data=file,
-            file_name="an255.png",
-            mime="image/png"
-          )
+with st.container():
+    text, download_images = st.columns((1, 2))
+    with text:
+        st.write("Створіть папку з ім'ям images, і там поставте фотки мрії і Python.")
+    with download_images:
+        with open("images/an225.png", "rb") as file:
+            btn = st.download_button(
+                    label="Мрія",
+                    data=file,
+                    file_name="an255.png",
+                    mime="image/png"
+                  )
+        with open("images/Py.png", "rb") as file:
+            btn = st.download_button(
+                label="Python",
+                data=file,
+                file_name="Py.png",
+                mime="image/png"
+            )
