@@ -25,6 +25,7 @@ with st.container():
 with st.container():
     text_column, download_column = st.columns((1, 2))
     with text_column:
+        st.write("Поміняйте розшириня від .txt до .py")
         text_contents = '''
 from PIL import Image
 import streamlit as st
