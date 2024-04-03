@@ -84,7 +84,7 @@ with st.container():
 with st.container():
     text_toml, download_toml = st.columns((1, 2))
     with text_toml:
-        st.write("Поміняти розширеня файлу від .bin до .toml і створити папку .streamlit")
+        st.write("Поміняти розширеня файлу від .txt до .toml і створити папку .streamlit")
     with download_toml:
         text_contents = '''[theme]
 
