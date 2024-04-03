@@ -59,3 +59,13 @@ with st.container():
         st.download_button('app.py', text_contents)'''
     with download_column:
         st.download_button('app.py', text_contents)
+
+
+
+with open("images/an225.png", "rb") as file:
+    btn = st.download_button(
+            label="Скачати ан-255",
+            data=file,
+            file_name="an255.png",
+            mime="image/png"
+          )
