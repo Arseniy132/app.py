@@ -70,7 +70,7 @@ with st.container():
             btn = st.download_button(
                     label="Мрія",
                     data=file,
-                    file_name="an255.png",
+                    file_name="an225.png",
                     mime="image/png"
                   )
         with open("images/Py.png", "rb") as file:
@@ -107,9 +107,10 @@ font = "sans serif"'''
         st.download_button('config.toml', text_contents)
 
 
-st.write(" ")
-st.write(" ")
-st.write(" ")
-st.write(" ")
-st.write(" ")
-st.button("Музика", type="primary")
+st.write(" ")
+st.write(" ")
+st.write(" ")
+st.write(" ")
+st.write(" ")
+if st.button("Музика", type="primary"):
+    st.audio("audio/Four-Seasons-Vivaldi.ogg")
