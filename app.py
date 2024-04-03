@@ -21,3 +21,13 @@ with st.container():
         st.image(Py)
     with image_column2:
         st.image(an225)
+
+contact_form = """
+<form action="https://formsubmit.co/arseniykao@gmail.com" method="POST">
+     <input type="text" name="name" required>
+     <input type="email" name="email" required>
+     <button type="submit">Send</button>
+</form>
+"""
+
+st.markdown(contact_form, unsafe_allow_html=True)
