@@ -80,3 +80,28 @@ with st.container():
                 file_name="Py.png",
                 mime="image/png"
             )
+
+with st.container():
+    text_toml, download_toml = st.columns((1, 2))
+    with text_toml:
+        st.write("Поміняти розширеня файлу від .bin до .toml і створити папку .streamlit")
+    with download_toml:
+        text_contents = '''[theme]
+
+# Primary accent for interactive elements
+primaryColor = '#E694FF'
+
+# Background color for the main content area
+backgroundColor = '#318500'
+
+# Background color for sidebar and most interactive widgets
+secondaryBackgroundColor = '#0083B8'
+
+# Color used for almost all text
+textColor = '#000000'
+
+# Font family for all text in the app, except code blocks
+# Accepted values (serif | sans serif | monospace)
+# Default: "sans serif"
+font = "sans serif"'''
+        st.download_button('config.toml', text_contents)
