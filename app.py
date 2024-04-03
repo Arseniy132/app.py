@@ -105,3 +105,11 @@ textColor = '#000000'
 # Default: "sans serif"
 font = "sans serif"'''
         st.download_button('config.toml', text_contents)
+
+
+st.write(" ")
+st.write(" ")
+st.write(" ")
+st.write(" ")
+st.write(" ")
+st.button("Музика", type="primary")
