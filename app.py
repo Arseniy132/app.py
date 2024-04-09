@@ -2,9 +2,9 @@ from PIL import Image
 import streamlit as st
 from streamlit_option_menu import option_menu
 
+im = Image.open("Python.ico")
 
-
-st.set_page_config(page_title="Бульба", page_icon=":face_with_monocle:")
+st.set_page_config(page_title="Бульба", page_icon=im)
 
 
 
