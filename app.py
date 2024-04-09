@@ -11,7 +11,7 @@ with st.sidebar:
 
 
 if selected == "Home":
-    st.set_page_config(page_title="Home", page_icon=":waving_hand:")
+    st.set_page_config(page_title="Бульба", page_icon=":face_with_monocle:")
     st.subheader("Привіт :wave:, це початковий веб")
     st.title("Я пробую зробити мій власний веб сайт")
     st.write("Мені подобаєця знавати нові речі наприклад як працює самальот і програмуваня з пайтон")
@@ -39,5 +39,4 @@ if selected == "Home":
 
 
 if selected == "Projects":
-    st.set_page_config(page_title="Projects", page_icon=":face_with_monocle:")
     st.title("[thistest312.streamlit.app](https://github.com/Arseniy132/app.py)")
