@@ -94,4 +94,4 @@ if selected == "English":
         st.audio("audio/Four-Seasons-Vivaldi.ogg")
 
 if selected == "Projects":
-    st.title("[thistest1312.streamlit.app](https://github.com/Arseniy132/app.py)")
+    st.title("[thistest312.streamlit.app](https://github.com/Arseniy132/app.py)")
