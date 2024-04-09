@@ -2,13 +2,32 @@ from PIL import Image
 import streamlit as st
 from streamlit_option_menu import option_menu
 
+
+
 st.set_page_config(page_title="Бульба", page_icon=":face_with_monocle:")
+
+
+
+
+
+
+
+
+
+
 
 with st.sidebar:
     selected = option_menu(
         menu_title="Selection Menu",
         options=["Українська", "Spanish", "English", "Projects"],
     )
+
+
+
+
+
+
+
 
 
 if selected == "Українська":
@@ -38,8 +57,12 @@ if selected == "Українська":
         st.audio("audio/Four-Seasons-Vivaldi.ogg")
 
 
-if selected == "Projects":
-    st.title("[thistest312.streamlit.app](https://github.com/Arseniy132/app.py)")
+
+
+
+
+
+
 
 if selected == "Spanish":
     st.subheader("Hola :wave:, esto es un sitio web principal")
@@ -67,6 +90,15 @@ if selected == "Spanish":
     if st.button("Musica", type="primary"):
         st.audio("audio/Four-Seasons-Vivaldi.ogg")
 
+
+
+
+
+
+
+
+
+
 if selected == "English":
     st.subheader("Hello :wave:, this is a starter web")
     st.title("I'm trying to create my own web site")
@@ -92,6 +124,21 @@ if selected == "English":
     st.write(" ")
     if st.button("Music", type="primary"):
         st.audio("audio/Four-Seasons-Vivaldi.ogg")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 if selected == "Projects":
     st.title("[thistest312.streamlit.app](https://github.com/Arseniy132/app.py)")
