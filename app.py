@@ -7,11 +7,11 @@ st.set_page_config(page_title="Бульба", page_icon=":face_with_monocle:")
 with st.sidebar:
     selected = option_menu(
         menu_title="Selection Menu",
-        options=["Home", "Spanish", "English", "Projects"],
+        options=["Українська", "Spanish", "English", "Projects"],
     )
 
 
-if selected == "Home":
+if selected == "Українська":
     st.subheader("Привіт :wave:, це початковий веб")
     st.title("Я пробую зробити мій власний веб сайт")
     st.write("Мені подобаєця знавати нові речі наприклад як працює самальот і програмуваня з пайтон")
@@ -90,7 +90,7 @@ if selected == "English":
     st.write(" ")
     st.write(" ")
     st.write(" ")
-    if st.button("Музика", type="primary"):
+    if st.button("Music", type="primary"):
         st.audio("audio/Four-Seasons-Vivaldi.ogg")
 
 if selected == "Projects":
