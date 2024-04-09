@@ -7,7 +7,7 @@ st.set_page_config(page_title="Бульба", page_icon=":face_with_monocle:")
 with st.sidebar:
     selected = option_menu(
         menu_title="Main Menu",
-        options=["Home", "Projects", "Spanish", "English"],
+        options=["Home", "Spanish", "English", "Projects"],
     )
 
 
