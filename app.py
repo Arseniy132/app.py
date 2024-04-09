@@ -19,7 +19,7 @@ st.set_page_config(page_title="Бульба", page_icon=":face_with_monocle:")
 with st.sidebar:
     selected = option_menu(
         menu_title="Selection Menu",
-        options=["Українська", "Spanish", "English", "Projects"],
+        options=["Українська", "Español", "English", "Projects"],
     )
 
 
@@ -64,7 +64,7 @@ if selected == "Українська":
 
 
 
-if selected == "Spanish":
+if selected == "Español":
     st.subheader("Hola :wave:, esto es un sitio web principal")
     st.title("Estoy intentando crear mi propio sitio web")
     st.write("Me gusta saber nuevas cosas, por ejemplo, como funciona un avion y me gusta la programacion con Python")
