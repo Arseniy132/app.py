@@ -70,8 +70,8 @@ if selected == "Spanish":
 if selected == "English":
     st.subheader("Hello :wave:, this is a starter web")
     st.title("I'm trying to create my own web site")
-    st.write("I like discovering")
-    st.write("[Як я цей сайт зробив >>](https://www.youtube.com/playlist?list=PL7QI8ORyVSCaejt2LICRQtOTwmPiwKO2n)")
+    st.write("I like discovering new things, like how a plane works and I also like Python programming")
+    st.write("[How I made this web site >>](https://www.youtube.com/playlist?list=PL7QI8ORyVSCaejt2LICRQtOTwmPiwKO2n)")
 
     # -----------assets---------------
     an225 = Image.open("images/an225.png")
