@@ -2,6 +2,7 @@ from PIL import Image
 import streamlit as st
 from streamlit_option_menu import option_menu
 
+st.set_page_config(page_title="Бульба", page_icon=":face_with_monocle:")
 
 with st.sidebar:
     selected = option_menu(
@@ -11,7 +12,6 @@ with st.sidebar:
 
 
 if selected == "Home":
-    st.set_page_config(page_title="Бульба", page_icon=":face_with_monocle:")
     st.subheader("Привіт :wave:, це початковий веб")
     st.title("Я пробую зробити мій власний веб сайт")
     st.write("Мені подобаєця знавати нові речі наприклад як працює самальот і програмуваня з пайтон")
