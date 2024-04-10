@@ -124,6 +124,7 @@ if selected == "English":
     st.write(" ")
     if st.button("Music", type="primary"):
         st.audio("audio/Four-Seasons-Vivaldi.ogg")
+    st.write(":)")
 
 
 
