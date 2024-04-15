@@ -3,7 +3,6 @@ from PIL import Image
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-
 im = Image.open("Python.png")
 
 st.set_page_config(page_title="Бульба", page_icon=im)
@@ -151,7 +150,7 @@ if selected == "Projects":
 
 
 if selected == "Bot":
-    openai.api_key = "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"
+    client = "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"
 
     if "openai_model" not in st.session_state:
         st.session_state["openai_model"] = "gpt-3.5-turbo"
