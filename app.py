@@ -1,4 +1,4 @@
-import openai
+from openai import OpenAI
 from PIL import Image
 import streamlit as st
 from streamlit_option_menu import option_menu
@@ -150,7 +150,7 @@ if selected == "Projects":
 
 
 if selected == "Bot":
-    client = "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"
+    client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
     if "openai_model" not in st.session_state:
         st.session_state["openai_model"] = "gpt-3.5-turbo"
