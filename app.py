@@ -6,29 +6,14 @@ im = Image.open("Python.png")
 
 st.set_page_config(page_title="Бульба", page_icon=im)
 
-
-
-
-
-
-
-
-
-
+FMAC = open('Vid/FMAC.mp4', 'rb')
+FMAC_VID = FMAC.read()
 
 with st.sidebar:
     selected = option_menu(
         menu_title="Selection Menu",
-        options=["Українська", "Español", "English", "Projects"],
+        options=["Українська", "Español", "English", "Projects", "Videos"],
     )
-
-
-
-
-
-
-
-
 
 if selected == "Українська":
     st.subheader("Привіт :wave:, це початковий веб")
@@ -56,19 +41,12 @@ if selected == "Українська":
     if st.button("Музика", type="primary"):
         st.audio("audio/Four-Seasons-Vivaldi.ogg")
 
-
-
-
-
-
-
-
-
 if selected == "Español":
     st.subheader("Hola :wave:, esto es un sitio web principal")
     st.title("Estoy intentando crear mi propio sitio web")
     st.write("Me gusta saber nuevas cosas, por ejemplo, como funciona un avion y me gusta la programacion con Python")
-    st.write("[Como he hecho este sitio web >>](https://www.youtube.com/playlist?list=PL7QI8ORyVSCaejt2LICRQtOTwmPiwKO2n)")
+    st.write(
+        "[Como he hecho este sitio web >>](https://www.youtube.com/playlist?list=PL7QI8ORyVSCaejt2LICRQtOTwmPiwKO2n)")
 
     # -----------assets---------------
     an225 = Image.open("images/an225.png")
@@ -89,15 +67,6 @@ if selected == "Español":
     st.write(" ")
     if st.button("Musica", type="primary"):
         st.audio("audio/Four-Seasons-Vivaldi.ogg")
-
-
-
-
-
-
-
-
-
 
 if selected == "English":
     st.subheader("Hello :wave:, this is a starter web")
@@ -126,20 +95,9 @@ if selected == "English":
         st.audio("audio/Four-Seasons-Vivaldi.ogg")
     st.write(":)")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if selected == "Projects":
     st.title("[thistest312.streamlit.app](https://github.com/Arseniy132/app.py)")
+    st.subheader("This are my latest projects")
+
+if selected == "Videos":
+    st.video(FMAC_VID)

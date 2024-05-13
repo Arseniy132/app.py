@@ -1,2 +1,3 @@
 streamlit_option_menu
-openai
+pillow
+streamlit
