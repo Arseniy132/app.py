@@ -2,5 +2,3 @@ streamlit_option_menu
 pillow
 streamlit
 pygame
-os
-shutil
